@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Digital Inheritance System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .dashboard-container {
+      max-width: 1100px;
+      margin: 60px auto;
+    }
+    h2 {
+      color: #1d3557;
+      font-weight: 700;
+    }
+    .card {
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .card-title {
+      color: #1d3557;
+      font-weight: 600;
+    }
+    .logout-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AfterVault!!</h1>
+        <br>
+    </header>
+  <nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">AfterVault</a>
+    <a href="login.html"><button class="btn btn-outline-light logout-btn">Logout</button></a>
+  </nav>
+
+  <div class="container dashboard-container text-center">
+    <h2 id="welcomeMessage" class="mb-4">Welcome</h2>
+    <p class="mb-5">Manage your digital assets, legacy, and contacts securely.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Upload Documents</h5>
+            <p class="card-text">Securely upload and store your digital files and passwords.</p>
+            <a href="upload.html" class="btn btn-primary">Upload</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Trusted Contacts</h5>
+            <p class="card-text">Manage who gets access to your assets when you're gone.</p>
+            <a href="contacts.html" class="btn btn-primary">Manage</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Digital Will</h5>
+            <p class="card-text">Create your digital will using encrypted secure format.</p>
+            <a href="will.html" class="btn btn-primary">Write Will</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Settings</h5>
+            <p class="card-text">Update your personal info, change password, and more.</p>
+            <a href="settings.html" class="btn btn-primary">Go to Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 mt-5 bg-light">
+    &copy; 2025 Digital Legacy Management System
+  </footer>
+  
+</body>
+</html>
